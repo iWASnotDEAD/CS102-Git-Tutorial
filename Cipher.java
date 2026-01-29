@@ -31,7 +31,7 @@ public class Cipher
           for (int i = 0; i < inputString.length(); i++)   
         {
             // append the encrypted version of the char to the output string
-            outputString += replaceChar(inputString.charAt(i), true);
+            outputString += replaceChar(inputString.charAt(i), false);
         }
 
         return outputString;
@@ -64,4 +64,5 @@ public class Cipher
         // if we did not find it in the alphabet, then return the original char
         return inputChar;
     }
+
 }   
